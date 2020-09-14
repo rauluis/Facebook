@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/cvpubli"
+
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/cardview_shadow_end_color"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="1dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="60dp"
+
+            android:layout_height="60dp"
+            android:layout_marginLeft="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/perfil"
+
+            />
+        <TextView
+
+            android:id="@+id/lblnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@id/imgPerfil"
+            android:layout_marginLeft="75dp"
+            android:text="nombre 1"
+            android:textColor="@android:color/black"
+
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblnombre"
+            android:layout_toRightOf="@id/imgPerfil"
+            android:text="Tiempo"
+            android:textSize="10dp"
+            />
+        <TextView
+            android:id="@+id/lblcomentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/imgPerfil"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:padding="3dp"
+            android:text="Comentario"
+            android:textSize="14sp"
+            android:textStyle="italic"
+
+
+            />
+        <ImageView
+            android:id="@+id/img_comentada"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/lblcomentario"
+            android:cropToPadding="true"
+            android:foregroundGravity="center"
+            />
+        <LinearLayout
+            android:id="@+id/Seccion_cantidad"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/img_comentada"
+
+            >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:text="total de reacciones y comentarios"
+                />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Seccion_cantidad"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/btnlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/like" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+               android:text="Like" />
+    <Button
+        android:id="@+id/btncoment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:src="@drawable/coment"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Coment" />
+    <Button
+        android:id="@+id/btnshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:baselineAligned="false"
+        android:src="@drawable/share" />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+    android:text="Share" />
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
